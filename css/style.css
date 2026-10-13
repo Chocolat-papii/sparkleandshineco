@@ -152,6 +152,39 @@ button {
   cursor: pointer
 }
 
+/* Mobile navigation */
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    margin-top: 16px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: #ffffffef;
+    z-index: 1000;
+    border-radius: 40px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
+
 .hero {
   position: relative;
   min-height: 790px;
